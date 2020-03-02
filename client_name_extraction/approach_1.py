@@ -50,8 +50,6 @@ def feeder(file_path, text_content):
 #    print(client_map)
     if max(list(client_map.values())) != 0:
         client = max(client_map.items(), key=operator.itemgetter(1))[0]
-	print(client)
         return [{"inference": client}]
     else:
-        print("Unknown ")
         return [{"inference": 'Unknown'}]

@@ -32,7 +32,6 @@ def approach1(sentence):
 def sentence_block_to_result(sentence_block):
     sans_space = re.sub('\s', '', sentence_block)
     if len(sans_space) == 0:
-	print("not found")
         return "Not Found"
     else:
         return "Yes"
